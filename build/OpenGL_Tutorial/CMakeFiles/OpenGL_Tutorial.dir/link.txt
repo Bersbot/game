@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/OpenGL_Tutorial.dir/main.cpp.o -o OpenGL_Tutorial  ../libs/glfw/src/libglfw3.a ../lib/libglewd.a /usr/lib/x86_64-linux-gnu/librt.a -lm /usr/lib/x86_64-linux-gnu/libX11.so -lGL -lX11 -ldl -lXext 

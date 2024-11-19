@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/vulkan.dir/vulkan.c.o -o vulkan  ../src/libglfw3.a -lm /usr/lib/x86_64-linux-gnu/libvulkan.so /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so 
