@@ -82,38 +82,36 @@ clean: libs/clean
 
 # Recursive "all" directory target.
 libs/all: libs/glfw/all
-libs/all: libs/glew/all
+libs/all: libs/glad/all
 libs/all: libs/glm/all
 .PHONY : libs/all
 
 # Recursive "preinstall" directory target.
 libs/preinstall: libs/glfw/preinstall
-libs/preinstall: libs/glew/preinstall
+libs/preinstall: libs/glad/preinstall
 libs/preinstall: libs/glm/preinstall
 .PHONY : libs/preinstall
 
 # Recursive "clean" directory target.
 libs/clean: libs/glfw/clean
-libs/clean: libs/glew/clean
+libs/clean: libs/glad/clean
 libs/clean: libs/glm/clean
 .PHONY : libs/clean
 
 #=============================================================================
-# Directory level rules for directory libs/glew
+# Directory level rules for directory libs/glad
 
 # Recursive "all" directory target.
-libs/glew/all: libs/glew/CMakeFiles/libglew_static.dir/all
-libs/glew/all: libs/glew/CMakeFiles/libglew_shared.dir/all
-.PHONY : libs/glew/all
+libs/glad/all: libs/glad/CMakeFiles/glad.dir/all
+.PHONY : libs/glad/all
 
 # Recursive "preinstall" directory target.
-libs/glew/preinstall:
-.PHONY : libs/glew/preinstall
+libs/glad/preinstall:
+.PHONY : libs/glad/preinstall
 
 # Recursive "clean" directory target.
-libs/glew/clean: libs/glew/CMakeFiles/libglew_static.dir/clean
-libs/glew/clean: libs/glew/CMakeFiles/libglew_shared.dir/clean
-.PHONY : libs/glew/clean
+libs/glad/clean: libs/glad/CMakeFiles/glad.dir/clean
+.PHONY : libs/glad/clean
 
 #=============================================================================
 # Directory level rules for directory libs/glfw
@@ -286,7 +284,7 @@ src/clean: src/CMakeFiles/OpenGL.dir/clean
 
 # All Build rule for target.
 src/CMakeFiles/OpenGL.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-src/CMakeFiles/OpenGL.dir/all: libs/glew/CMakeFiles/libglew_static.dir/all
+src/CMakeFiles/OpenGL.dir/all: libs/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL.dir/build.make src/CMakeFiles/OpenGL.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OpenGL.dir/build.make src/CMakeFiles/OpenGL.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=1 "Built target OpenGL"
@@ -294,7 +292,7 @@ src/CMakeFiles/OpenGL.dir/all: libs/glew/CMakeFiles/libglew_static.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/OpenGL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/OpenGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/OpenGL.dir/rule
@@ -341,7 +339,7 @@ libs/glfw/CMakeFiles/uninstall.dir/clean:
 libs/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target glfw"
 .PHONY : libs/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -393,12 +391,12 @@ libs/glfw/examples/CMakeFiles/boing.dir/clean:
 libs/glfw/examples/CMakeFiles/gears.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/gears.dir/build.make libs/glfw/examples/CMakeFiles/gears.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/gears.dir/build.make libs/glfw/examples/CMakeFiles/gears.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=19,20 "Built target gears"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=19,20,21 "Built target gears"
 .PHONY : libs/glfw/examples/CMakeFiles/gears.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/gears.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/examples/CMakeFiles/gears.dir/rule
@@ -419,12 +417,12 @@ libs/glfw/examples/CMakeFiles/gears.dir/clean:
 libs/glfw/examples/CMakeFiles/heightmap.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/heightmap.dir/build.make libs/glfw/examples/CMakeFiles/heightmap.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/heightmap.dir/build.make libs/glfw/examples/CMakeFiles/heightmap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=40,41 "Built target heightmap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=42,43,44 "Built target heightmap"
 .PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/heightmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/examples/CMakeFiles/heightmap.dir/rule
@@ -445,12 +443,12 @@ libs/glfw/examples/CMakeFiles/heightmap.dir/clean:
 libs/glfw/examples/CMakeFiles/offscreen.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/offscreen.dir/build.make libs/glfw/examples/CMakeFiles/offscreen.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/offscreen.dir/build.make libs/glfw/examples/CMakeFiles/offscreen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=63,64,65 "Built target offscreen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=63,64 "Built target offscreen"
 .PHONY : libs/glfw/examples/CMakeFiles/offscreen.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/examples/CMakeFiles/offscreen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/offscreen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/examples/CMakeFiles/offscreen.dir/rule
@@ -497,12 +495,12 @@ libs/glfw/examples/CMakeFiles/particles.dir/clean:
 libs/glfw/examples/CMakeFiles/sharing.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/sharing.dir/build.make libs/glfw/examples/CMakeFiles/sharing.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/sharing.dir/build.make libs/glfw/examples/CMakeFiles/sharing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=75,76 "Built target sharing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=74,75,76 "Built target sharing"
 .PHONY : libs/glfw/examples/CMakeFiles/sharing.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/examples/CMakeFiles/sharing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/sharing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/examples/CMakeFiles/sharing.dir/rule
@@ -523,12 +521,12 @@ libs/glfw/examples/CMakeFiles/sharing.dir/clean:
 libs/glfw/examples/CMakeFiles/simple.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/simple.dir/build.make libs/glfw/examples/CMakeFiles/simple.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/simple.dir/build.make libs/glfw/examples/CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=77,78,79 "Built target simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=77,78 "Built target simple"
 .PHONY : libs/glfw/examples/CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/examples/CMakeFiles/simple.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/simple.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/examples/CMakeFiles/simple.dir/rule
@@ -549,12 +547,12 @@ libs/glfw/examples/CMakeFiles/simple.dir/clean:
 libs/glfw/examples/CMakeFiles/splitview.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/splitview.dir/build.make libs/glfw/examples/CMakeFiles/splitview.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/examples/CMakeFiles/splitview.dir/build.make libs/glfw/examples/CMakeFiles/splitview.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=80,81 "Built target splitview"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=79,80,81 "Built target splitview"
 .PHONY : libs/glfw/examples/CMakeFiles/splitview.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/examples/CMakeFiles/splitview.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/examples/CMakeFiles/splitview.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/examples/CMakeFiles/splitview.dir/rule
@@ -627,12 +625,12 @@ libs/glfw/tests/CMakeFiles/clipboard.dir/clean:
 libs/glfw/tests/CMakeFiles/events.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/events.dir/build.make libs/glfw/tests/CMakeFiles/events.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/events.dir/build.make libs/glfw/tests/CMakeFiles/events.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=13,14,15,16 "Built target events"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=14,15,16 "Built target events"
 .PHONY : libs/glfw/tests/CMakeFiles/events.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/events.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/events.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/events.dir/rule
@@ -679,12 +677,12 @@ libs/glfw/tests/CMakeFiles/msaa.dir/clean:
 libs/glfw/tests/CMakeFiles/glfwinfo.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/glfwinfo.dir/build.make libs/glfw/tests/CMakeFiles/glfwinfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/glfwinfo.dir/build.make libs/glfw/tests/CMakeFiles/glfwinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=35,36,37 "Built target glfwinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=37,38,39,40 "Built target glfwinfo"
 .PHONY : libs/glfw/tests/CMakeFiles/glfwinfo.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/glfwinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/glfwinfo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/glfwinfo.dir/rule
@@ -705,12 +703,12 @@ libs/glfw/tests/CMakeFiles/glfwinfo.dir/clean:
 libs/glfw/tests/CMakeFiles/iconify.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/iconify.dir/build.make libs/glfw/tests/CMakeFiles/iconify.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/iconify.dir/build.make libs/glfw/tests/CMakeFiles/iconify.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=45,46,47 "Built target iconify"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=47,48,49,50 "Built target iconify"
 .PHONY : libs/glfw/tests/CMakeFiles/iconify.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/iconify.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/iconify.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/iconify.dir/rule
@@ -731,12 +729,12 @@ libs/glfw/tests/CMakeFiles/iconify.dir/clean:
 libs/glfw/tests/CMakeFiles/monitors.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/monitors.dir/build.make libs/glfw/tests/CMakeFiles/monitors.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/monitors.dir/build.make libs/glfw/tests/CMakeFiles/monitors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=57,58,59 "Built target monitors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=56,57,58,59 "Built target monitors"
 .PHONY : libs/glfw/tests/CMakeFiles/monitors.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/monitors.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/monitors.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/monitors.dir/rule
@@ -757,12 +755,12 @@ libs/glfw/tests/CMakeFiles/monitors.dir/clean:
 libs/glfw/tests/CMakeFiles/reopen.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/reopen.dir/build.make libs/glfw/tests/CMakeFiles/reopen.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/reopen.dir/build.make libs/glfw/tests/CMakeFiles/reopen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=72,73,74 "Built target reopen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=72,73 "Built target reopen"
 .PHONY : libs/glfw/tests/CMakeFiles/reopen.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/reopen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/reopen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/reopen.dir/rule
@@ -809,12 +807,12 @@ libs/glfw/tests/CMakeFiles/cursor.dir/clean:
 libs/glfw/tests/CMakeFiles/empty.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/empty.dir/build.make libs/glfw/tests/CMakeFiles/empty.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/empty.dir/build.make libs/glfw/tests/CMakeFiles/empty.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=10,11,12 "Built target empty"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=10,11,12,13 "Built target empty"
 .PHONY : libs/glfw/tests/CMakeFiles/empty.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/empty.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/empty.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/empty.dir/rule
@@ -861,12 +859,12 @@ libs/glfw/tests/CMakeFiles/gamma.dir/clean:
 libs/glfw/tests/CMakeFiles/icon.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/icon.dir/build.make libs/glfw/tests/CMakeFiles/icon.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/icon.dir/build.make libs/glfw/tests/CMakeFiles/icon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=42,43,44 "Built target icon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=45,46 "Built target icon"
 .PHONY : libs/glfw/tests/CMakeFiles/icon.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/icon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/icon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/icon.dir/rule
@@ -887,7 +885,7 @@ libs/glfw/tests/CMakeFiles/icon.dir/clean:
 libs/glfw/tests/CMakeFiles/inputlag.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/inputlag.dir/build.make libs/glfw/tests/CMakeFiles/inputlag.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/inputlag.dir/build.make libs/glfw/tests/CMakeFiles/inputlag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=48,49,50 "Built target inputlag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=51,52,53 "Built target inputlag"
 .PHONY : libs/glfw/tests/CMakeFiles/inputlag.dir/all
 
 # Build rule for subdir invocation for target.
@@ -913,12 +911,12 @@ libs/glfw/tests/CMakeFiles/inputlag.dir/clean:
 libs/glfw/tests/CMakeFiles/joysticks.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/joysticks.dir/build.make libs/glfw/tests/CMakeFiles/joysticks.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/joysticks.dir/build.make libs/glfw/tests/CMakeFiles/joysticks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=51,52,53 "Built target joysticks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=54,55 "Built target joysticks"
 .PHONY : libs/glfw/tests/CMakeFiles/joysticks.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/joysticks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/joysticks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/joysticks.dir/rule
@@ -939,12 +937,12 @@ libs/glfw/tests/CMakeFiles/joysticks.dir/clean:
 libs/glfw/tests/CMakeFiles/opacity.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/opacity.dir/build.make libs/glfw/tests/CMakeFiles/opacity.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/tests/CMakeFiles/opacity.dir/build.make libs/glfw/tests/CMakeFiles/opacity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=66,67 "Built target opacity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=65,66,67 "Built target opacity"
 .PHONY : libs/glfw/tests/CMakeFiles/opacity.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glfw/tests/CMakeFiles/opacity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glfw/tests/CMakeFiles/opacity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glfw/tests/CMakeFiles/opacity.dir/rule
@@ -1115,56 +1113,30 @@ libs/glfw/tests/CMakeFiles/vulkan.dir/clean:
 .PHONY : libs/glfw/tests/CMakeFiles/vulkan.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glew/CMakeFiles/libglew_static.dir
+# Target rules for target libs/glad/CMakeFiles/glad.dir
 
 # All Build rule for target.
-libs/glew/CMakeFiles/libglew_static.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_static.dir/build.make libs/glew/CMakeFiles/libglew_static.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_static.dir/build.make libs/glew/CMakeFiles/libglew_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=55,56 "Built target libglew_static"
-.PHONY : libs/glew/CMakeFiles/libglew_static.dir/all
+libs/glad/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=22 "Built target glad"
+.PHONY : libs/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glew/CMakeFiles/libglew_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew/CMakeFiles/libglew_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
-.PHONY : libs/glew/CMakeFiles/libglew_static.dir/rule
-
-# Convenience name for target.
-libglew_static: libs/glew/CMakeFiles/libglew_static.dir/rule
-.PHONY : libglew_static
-
-# clean rule for target.
-libs/glew/CMakeFiles/libglew_static.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_static.dir/build.make libs/glew/CMakeFiles/libglew_static.dir/clean
-.PHONY : libs/glew/CMakeFiles/libglew_static.dir/clean
-
-#=============================================================================
-# Target rules for target libs/glew/CMakeFiles/libglew_shared.dir
-
-# All Build rule for target.
-libs/glew/CMakeFiles/libglew_shared.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_shared.dir/build.make libs/glew/CMakeFiles/libglew_shared.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_shared.dir/build.make libs/glew/CMakeFiles/libglew_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=54 "Built target libglew_shared"
-.PHONY : libs/glew/CMakeFiles/libglew_shared.dir/all
-
-# Build rule for subdir invocation for target.
-libs/glew/CMakeFiles/libglew_shared.dir/rule: cmake_check_build_system
+libs/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glew/CMakeFiles/libglew_shared.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glad/CMakeFiles/glad.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
-.PHONY : libs/glew/CMakeFiles/libglew_shared.dir/rule
+.PHONY : libs/glad/CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
-libglew_shared: libs/glew/CMakeFiles/libglew_shared.dir/rule
-.PHONY : libglew_shared
+glad: libs/glad/CMakeFiles/glad.dir/rule
+.PHONY : glad
 
 # clean rule for target.
-libs/glew/CMakeFiles/libglew_shared.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_shared.dir/build.make libs/glew/CMakeFiles/libglew_shared.dir/clean
-.PHONY : libs/glew/CMakeFiles/libglew_shared.dir/clean
+libs/glad/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/clean
+.PHONY : libs/glad/CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Target rules for target libs/glm/glm/CMakeFiles/glm.dir
@@ -1173,12 +1145,12 @@ libs/glew/CMakeFiles/libglew_shared.dir/clean:
 libs/glm/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glm/glm/CMakeFiles/glm.dir/build.make libs/glm/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glm/glm/CMakeFiles/glm.dir/build.make libs/glm/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=38,39 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bersbot/proj/OpenGL/build/CMakeFiles --progress-num=41 "Built target glm"
 .PHONY : libs/glm/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.
 libs/glm/glm/CMakeFiles/glm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glm/glm/CMakeFiles/glm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bersbot/proj/OpenGL/build/CMakeFiles 0
 .PHONY : libs/glm/glm/CMakeFiles/glm.dir/rule

@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/bersbot/proj/OpenGL/build/src",
-  "command": "/usr/bin/c++ -DGLEW_NO_GLU -DGLEW_STATIC -I/home/bersbot/proj/OpenGL/libs/glfw/include -I/home/bersbot/proj/OpenGL/libs/glew/include -I/home/bersbot/proj/OpenGL/libs/glm/glm -g -o CMakeFiles/OpenGL.dir/main.cpp.o -c /home/bersbot/proj/OpenGL/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/bersbot/proj/OpenGL/libs/glfw/include -I/home/bersbot/proj/OpenGL/libs/glad/include -I/home/bersbot/proj/OpenGL/libs/glm/glm -g -o CMakeFiles/OpenGL.dir/main.cpp.o -c /home/bersbot/proj/OpenGL/src/main.cpp",
   "file": "/home/bersbot/proj/OpenGL/src/main.cpp",
   "output": "src/CMakeFiles/OpenGL.dir/main.cpp.o"
 },
@@ -522,16 +522,10 @@
   "output": "libs/glfw/tests/CMakeFiles/vulkan.dir/vulkan.c.o"
 },
 {
-  "directory": "/home/bersbot/proj/OpenGL/build/libs/glew",
-  "command": "/usr/bin/cc -DGLEW_NO_GLU -DGLEW_STATIC -I/home/bersbot/proj/OpenGL/libs/glew/include -g -o CMakeFiles/libglew_static.dir/src/glew.c.o -c /home/bersbot/proj/OpenGL/libs/glew/src/glew.c",
-  "file": "/home/bersbot/proj/OpenGL/libs/glew/src/glew.c",
-  "output": "libs/glew/CMakeFiles/libglew_static.dir/src/glew.c.o"
-},
-{
-  "directory": "/home/bersbot/proj/OpenGL/build/libs/glew",
-  "command": "/usr/bin/cc -DGLEW_BUILD -DGLEW_NO_GLU -Dlibglew_shared_EXPORTS -I/home/bersbot/proj/OpenGL/libs/glew/include -g -fPIC -o CMakeFiles/libglew_shared.dir/src/glew.c.o -c /home/bersbot/proj/OpenGL/libs/glew/src/glew.c",
-  "file": "/home/bersbot/proj/OpenGL/libs/glew/src/glew.c",
-  "output": "libs/glew/CMakeFiles/libglew_shared.dir/src/glew.c.o"
+  "directory": "/home/bersbot/proj/OpenGL/build/libs/glad",
+  "command": "/usr/bin/cc  -I/home/bersbot/proj/OpenGL/libs/glad/include -g -o CMakeFiles/glad.dir/src/glad.c.o -c /home/bersbot/proj/OpenGL/libs/glad/src/glad.c",
+  "file": "/home/bersbot/proj/OpenGL/libs/glad/src/glad.c",
+  "output": "libs/glad/CMakeFiles/glad.dir/src/glad.c.o"
 },
 {
   "directory": "/home/bersbot/proj/OpenGL/build/libs/glm/glm",

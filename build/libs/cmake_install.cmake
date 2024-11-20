@@ -45,7 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bersbot/proj/OpenGL/build/libs/glfw/cmake_install.cmake")
-  include("/home/bersbot/proj/OpenGL/build/libs/glew/cmake_install.cmake")
+  include("/home/bersbot/proj/OpenGL/build/libs/glad/cmake_install.cmake")
   include("/home/bersbot/proj/OpenGL/build/libs/glm/cmake_install.cmake")
 
 endif()

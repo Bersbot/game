@@ -62,7 +62,7 @@
 						6
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libs.glfw-Debug-bada9e88417981597996.json",
+					"jsonFile" : "directory-libs.glfw-Debug-4ff03c97c0e98b111137.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28.3"
@@ -72,13 +72,13 @@
 					"source" : "libs/glfw",
 					"targetIndexes" : 
 					[
-						31
+						30
 					]
 				},
 				{
 					"build" : "libs/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libs.glfw.src-Debug-d040e60851627868a954.json",
+					"jsonFile" : "directory-libs.glfw.src-Debug-2659a7c3dd73ff9bd5ff.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28.3"
@@ -88,7 +88,7 @@
 					"source" : "libs/glfw/src",
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
@@ -105,13 +105,13 @@
 					[
 						1,
 						7,
-						11,
-						20,
-						22,
+						12,
+						19,
+						21,
+						23,
 						24,
 						25,
-						26,
-						33
+						32
 					]
 				},
 				{
@@ -131,38 +131,36 @@
 						4,
 						5,
 						6,
-						9,
-						12,
+						10,
 						13,
 						14,
 						15,
+						16,
+						17,
 						18,
-						19,
-						21,
-						23,
+						20,
+						22,
+						26,
 						27,
 						28,
 						29,
-						30,
-						32,
-						34
+						31,
+						33
 					]
 				},
 				{
-					"build" : "libs/glew",
-					"hasInstallRule" : true,
-					"jsonFile" : "directory-libs.glew-Debug-6d0f27426712c009ce38.json",
+					"build" : "libs/glad",
+					"jsonFile" : "directory-libs.glad-Debug-ca06ba1f4a1543a5a943.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8.12"
+						"string" : "3.13"
 					},
 					"parentIndex" : 2,
 					"projectIndex" : 2,
-					"source" : "libs/glew",
+					"source" : "libs/glad",
 					"targetIndexes" : 
 					[
-						16,
-						17
+						8
 					]
 				},
 				{
@@ -192,7 +190,7 @@
 					"source" : "libs/glm/glm",
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				}
 			],
@@ -237,13 +235,14 @@
 						5,
 						6,
 						7,
-						8,
 						9,
-						11,
+						10,
 						12,
 						13,
 						14,
 						15,
+						16,
+						17,
 						18,
 						19,
 						20,
@@ -259,8 +258,7 @@
 						30,
 						31,
 						32,
-						33,
-						34
+						33
 					]
 				},
 				{
@@ -268,12 +266,11 @@
 					[
 						7
 					],
-					"name" : "glew",
+					"name" : "Glad",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						16,
-						17
+						8
 					]
 				},
 				{
@@ -286,7 +283,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						10
+						11
 					]
 				}
 			],
@@ -295,7 +292,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "OpenGL::@145eef247bfb46b6828c",
-					"jsonFile" : "target-OpenGL-Debug-0c940dffabf964bf5f6c.json",
+					"jsonFile" : "target-OpenGL-Debug-4b5bce73691d2d298438.json",
 					"name" : "OpenGL",
 					"projectIndex" : 0
 				},
@@ -347,6 +344,13 @@
 					"jsonFile" : "target-gears-Debug-c8d69e2d2d7641961fc4.json",
 					"name" : "gears",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glad::@394eb3637a8e70cb7dd5",
+					"jsonFile" : "target-glad-Debug-0867b76d370d8661a2da.json",
+					"name" : "glad",
+					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 4,
@@ -403,20 +407,6 @@
 					"jsonFile" : "target-joysticks-Debug-0549050415c8ea6eb3a6.json",
 					"name" : "joysticks",
 					"projectIndex" : 1
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "libglew_shared::@c824df898991c64a80cc",
-					"jsonFile" : "target-libglew_shared-Debug-2943cc8881859ca41fc5.json",
-					"name" : "libglew_shared",
-					"projectIndex" : 2
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "libglew_static::@c824df898991c64a80cc",
-					"jsonFile" : "target-libglew_static-Debug-949e6e0e7502ab843e15.json",
-					"name" : "libglew_static",
-					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 6,

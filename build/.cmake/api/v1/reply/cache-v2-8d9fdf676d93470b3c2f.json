@@ -1199,7 +1199,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "2.2.0"
+			"value" : "1.0.2"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -1211,7 +1211,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MINOR",
@@ -1223,7 +1223,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "2"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",
@@ -1235,7 +1235,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "0"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
@@ -1562,18 +1562,6 @@
 			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
 		},
 		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenGL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding OpenGL"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][cfound components: OpenGL GLX ][v()]"
-		},
-		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
 			"properties" : 
 			[
@@ -1704,18 +1692,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libfontconfig.so"
-		},
-		{
-			"name" : "GLEW_OSMESA",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Off-screen Mesa mode"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
 		},
 		{
 			"name" : "GLFW_BINARY_DIR",
@@ -2078,6 +2054,42 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "Glad_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/bersbot/proj/OpenGL/build/libs/glad"
+		},
+		{
+			"name" : "Glad_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Glad_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/bersbot/proj/OpenGL/libs/glad"
+		},
+		{
 			"name" : "MATH_LIBRARY",
 			"properties" : 
 			[
@@ -2092,210 +2104,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libm.so"
-		},
-		{
-			"name" : "ONLY_LIBS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Do not build executables"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "OPENGL_EGL_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "OPENGL_GLES2_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "OPENGL_GLES3_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "OPENGL_GLX_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "OPENGL_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "OPENGL_egl_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libEGL.so"
-		},
-		{
-			"name" : "OPENGL_gles2_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
-		},
-		{
-			"name" : "OPENGL_gles3_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
-		},
-		{
-			"name" : "OPENGL_glu_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLU.so"
-		},
-		{
-			"name" : "OPENGL_glx_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLX.so"
-		},
-		{
-			"name" : "OPENGL_opengl_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so"
-		},
-		{
-			"name" : "OPENGL_xmesa_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "OPENGL_xmesa_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OpenGL_BINARY_DIR",
@@ -2364,18 +2172,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/pkg-config"
-		},
-		{
-			"name" : "PKG_CONFIG_REPRESENTATIVE_TARGET",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Generate pc file for specified target as glew. libglew_static|libglew_shared"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_CFLAGS",
@@ -2814,18 +2610,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/librt.a"
 		},
 		{
-			"name" : "USE_GLU",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Use GLU"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "VULKAN_INCLUDE_DIR",
 			"properties" : 
 			[
@@ -2888,22 +2672,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libICE.so"
-		},
-		{
-			"name" : "X11_LIBRARIES",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
 		},
 		{
 			"name" : "X11_LIB_X11_SOLO",
@@ -5074,66 +4842,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "glew-cmake_BUILD_SHARED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Build the shared glew library"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
-			"name" : "glew-cmake_BUILD_STATIC",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Build the static glew library"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
-			"name" : "glew_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/bersbot/proj/OpenGL/build/libs/glew"
-		},
-		{
-			"name" : "glew_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "glew_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/bersbot/proj/OpenGL/libs/glew"
-		},
-		{
 			"name" : "glm_BINARY_DIR",
 			"properties" : 
 			[
@@ -5168,30 +4876,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/bersbot/proj/OpenGL/libs/glm"
-		},
-		{
-			"name" : "libglew_shared_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;OpenGL::OpenGL;general;OpenGL::GLX;general;X11::X11;general;X11::Xext;"
-		},
-		{
-			"name" : "libglew_static_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;OpenGL::OpenGL;general;OpenGL::GLX;general;X11::X11;general;X11::Xext;"
 		},
 		{
 			"name" : "pkgcfg_lib_PKG_FONTCONFIG_fontconfig",

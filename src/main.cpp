@@ -1,54 +1,59 @@
 #include "func.hpp"
 
-int main() {
-    if (!glfwInit()) {
-        std::cerr << "Failed init GLFW";
+
+int main(void)
+{
+    /* Initialize the library */
+    if (!glfwInit())
+    {
+        std::cerr << "glfwInit failed!" << std::endl;
         return -1;
     }
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-    
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL Window", nullptr, nullptr);
-    if (!window) {
-        std::cerr << "Failed create GLFW window";
+    /* Create a windowed mode window and its OpenGL context */
+    GLFWwindow* window = glfwCreateWindow(Width, Height, "Battle City", nullptr, nullptr);
+    if (!window)
+    {
+        std::cerr << "glfwCreateWindow failed!" << std::endl;
         glfwTerminate();
         return -1;
     }
 
+    /* Make the window's context current */
     glfwMakeContextCurrent(window);
-    glewExperimental = true;
-    if (glewInit() != 0) {
-        glfwTerminate();
-        std::cerr << "Failed init GLEW";
-        return -1;
-    }
-    glClearColor(1, 1, 1, 0);
 
-    while (glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS && !glfwWindowShouldClose(window)) {
+    if (!gladLoadGL())
+    {
+        std::cerr << "Can't load GLAD!" << std::endl;
+    }
+
+    glClearColor(1, 1, 0, 1);
+    Triangl tri;
+    tri.Points(point);
+    tri.Colors(color);
+    tri.FragmentShader(fragmentShader);
+    tri.VertexShader(vertexShader);
+    tri.ShaiderInit();
+
+    /* Loop until the user closes the window */
+    while (!glfwWindowShouldClose(window) && glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS)
+    {
+        /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
-        mainLoop(window);
+
+        tri.Draw();
+        /* Swap front and back buffers */
         glfwSwapBuffers(window);
+
+        /* Poll for and process events */
         glfwPollEvents();
     }
 
-    glfwDestroyWindow(window);
     glfwTerminate();
     return 0;
-}
-
-
-void mainLoop(GLFWwindow* window){
-    glBegin(GL_POLYGON);
-        glColor3b(0, 0, 100);
-        glVertex3f(pl[0] + 0.5, pl[1] + 0.5, 0.0f);
-        glVertex3f(pl[0] - 0.5, pl[1] + 0.5, 0.0f);
-        glColor3b(100, 0, 0);
-        glVertex3f(pl[0] - 0.5, pl[1] - 0.5, 0.0f);
-        glColor3b(0, 100, 0);
-        glVertex3f(pl[0] + 0.5, pl[1] - 0.5, 0.0f);
-    glEnd();
-    if (glfwGetKey(window, GLFW_KEY_W)){ pl[1] += 0.01; }
-    if (glfwGetKey(window, GLFW_KEY_S)){ pl[1] -= 0.01; }
-    if (glfwGetKey(window, GLFW_KEY_A)){ pl[0] -= 0.01; }
-    if (glfwGetKey(window, GLFW_KEY_D)){ pl[0] += 0.01; }
 }

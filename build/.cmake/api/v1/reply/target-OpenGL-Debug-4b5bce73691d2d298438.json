@@ -18,7 +18,6 @@
 		[
 			"src/CMakeLists.txt",
 			"libs/glfw/src/CMakeLists.txt",
-			"libs/glew/CMakeLists.txt",
 			"libs/CMakeLists.txt"
 		],
 		"nodes" : 
@@ -51,31 +50,22 @@
 				"file" : 2
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 2,
-				"line" : 248,
+				"line" : 5,
 				"parent" : 5
 			},
 			{
-				"file" : 3
-			},
-			{
 				"command" : 2,
-				"file" : 3,
-				"line" : 5,
-				"parent" : 7
-			},
-			{
-				"command" : 2,
-				"file" : 3,
+				"file" : 2,
 				"line" : 6,
-				"parent" : 7
+				"parent" : 5
 			},
 			{
 				"command" : 2,
-				"file" : 3,
+				"file" : 2,
 				"line" : 7,
-				"parent" : 7
+				"parent" : 5
 			}
 		]
 	},
@@ -88,29 +78,18 @@
 					"fragment" : "-g"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 2,
-					"define" : "GLEW_NO_GLU"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "GLEW_STATIC"
-				}
-			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"path" : "/home/bersbot/proj/OpenGL/libs/glfw/include"
 				},
 				{
-					"backtrace" : 9,
-					"path" : "/home/bersbot/proj/OpenGL/libs/glew/include"
+					"backtrace" : 7,
+					"path" : "/home/bersbot/proj/OpenGL/libs/glad/include"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 8,
 					"path" : "/home/bersbot/proj/OpenGL/libs/glm/glm"
 				}
 			],
@@ -129,7 +108,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "libglew_static::@c824df898991c64a80cc"
+			"id" : "glad::@394eb3637a8e70cb7dd5"
 		}
 	],
 	"id" : "OpenGL::@145eef247bfb46b6828c",
@@ -152,7 +131,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../libs/glew/lib/libglewd.a",
+				"fragment" : "../libs/glad/libglad.a",
 				"role" : "libraries"
 			},
 			{
@@ -171,26 +150,6 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libX11.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLX.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libXext.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libX11.so",
 				"role" : "libraries"
 			}

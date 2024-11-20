@@ -578,30 +578,17 @@ vulkan/fast:
 .PHONY : vulkan/fast
 
 #=============================================================================
-# Target rules for targets named libglew_static
+# Target rules for targets named glad
 
 # Build rule for target.
-libglew_static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libglew_static
-.PHONY : libglew_static
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
 
 # fast build rule for target.
-libglew_static/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_static.dir/build.make libs/glew/CMakeFiles/libglew_static.dir/build
-.PHONY : libglew_static/fast
-
-#=============================================================================
-# Target rules for targets named libglew_shared
-
-# Build rule for target.
-libglew_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libglew_shared
-.PHONY : libglew_shared
-
-# fast build rule for target.
-libglew_shared/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glew/CMakeFiles/libglew_shared.dir/build.make libs/glew/CMakeFiles/libglew_shared.dir/build
-.PHONY : libglew_shared/fast
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
 
 #=============================================================================
 # Target rules for targets named glm
@@ -637,6 +624,7 @@ help:
 	@echo "... events"
 	@echo "... gamma"
 	@echo "... gears"
+	@echo "... glad"
 	@echo "... glfw"
 	@echo "... glfwinfo"
 	@echo "... glm"
@@ -645,8 +633,6 @@ help:
 	@echo "... iconify"
 	@echo "... inputlag"
 	@echo "... joysticks"
-	@echo "... libglew_shared"
-	@echo "... libglew_static"
 	@echo "... monitors"
 	@echo "... msaa"
 	@echo "... offscreen"
