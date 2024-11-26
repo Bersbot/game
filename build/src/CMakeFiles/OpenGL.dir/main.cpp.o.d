@@ -1,6 +1,6 @@
 src/CMakeFiles/OpenGL.dir/main.cpp.o: \
  /home/bersbot/proj/OpenGL/src/main.cpp /usr/include/stdc-predef.h \
- /home/bersbot/proj/OpenGL/src/func.hpp /usr/include/c++/13/cmath \
+ /home/bersbot/proj/OpenGL/src/include.hpp /usr/include/c++/13/cmath \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -371,4 +371,7 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_uint1.hpp \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /usr/include/glm/gtc/type_ptr.inl
+ /usr/include/glm/gtc/type_ptr.inl \
+ /home/bersbot/proj/OpenGL/src/render/render.hpp \
+ /home/bersbot/proj/OpenGL/src/main.hpp \
+ /home/bersbot/proj/OpenGL/src/render/color.hpp

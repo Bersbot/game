@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/bersbot/proj/OpenGL/libs/glfw/include -I/home/bersbot/proj/OpenGL/libs/glad/include -I/home/bersbot/proj/OpenGL/libs/glm/glm
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=gnu++17
 

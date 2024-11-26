@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/bersbot/proj/OpenGL/build/src",
-  "command": "/usr/bin/c++  -I/home/bersbot/proj/OpenGL/libs/glfw/include -I/home/bersbot/proj/OpenGL/libs/glad/include -I/home/bersbot/proj/OpenGL/libs/glm/glm -g -o CMakeFiles/OpenGL.dir/main.cpp.o -c /home/bersbot/proj/OpenGL/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/bersbot/proj/OpenGL/libs/glfw/include -I/home/bersbot/proj/OpenGL/libs/glad/include -I/home/bersbot/proj/OpenGL/libs/glm/glm -g -std=gnu++17 -o CMakeFiles/OpenGL.dir/main.cpp.o -c /home/bersbot/proj/OpenGL/src/main.cpp",
   "file": "/home/bersbot/proj/OpenGL/src/main.cpp",
   "output": "src/CMakeFiles/OpenGL.dir/main.cpp.o"
 },
@@ -529,7 +529,7 @@
 },
 {
   "directory": "/home/bersbot/proj/OpenGL/build/libs/glm/glm",
-  "command": "/usr/bin/c++  -I/home/bersbot/proj/OpenGL/libs/glm -g -o CMakeFiles/glm.dir/detail/glm.cpp.o -c /home/bersbot/proj/OpenGL/libs/glm/glm/detail/glm.cpp",
+  "command": "/usr/bin/c++  -I/home/bersbot/proj/OpenGL/libs/glm -g -std=c++17 -o CMakeFiles/glm.dir/detail/glm.cpp.o -c /home/bersbot/proj/OpenGL/libs/glm/glm/detail/glm.cpp",
   "file": "/home/bersbot/proj/OpenGL/libs/glm/glm/detail/glm.cpp",
   "output": "libs/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o"
 }

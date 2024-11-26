@@ -6,7 +6,10 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o
  /home/bersbot/proj/OpenGL/libs/glad/include/KHR/khrplatform.h
  /home/bersbot/proj/OpenGL/libs/glad/include/glad/glad.h
  /home/bersbot/proj/OpenGL/libs/glfw/include/GLFW/glfw3.h
- /home/bersbot/proj/OpenGL/src/func.hpp
+ /home/bersbot/proj/OpenGL/src/include.hpp
+ /home/bersbot/proj/OpenGL/src/main.hpp
+ /home/bersbot/proj/OpenGL/src/render/color.hpp
+ /home/bersbot/proj/OpenGL/src/render/render.hpp
  /usr/include/GL/gl.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h

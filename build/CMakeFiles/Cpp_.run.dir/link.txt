@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Cpp_.run.dir/src/main.cpp.o -o Cpp_.run 

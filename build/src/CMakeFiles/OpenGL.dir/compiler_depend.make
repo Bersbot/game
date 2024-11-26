@@ -5,7 +5,10 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
   /home/bersbot/proj/OpenGL/libs/glad/include/KHR/khrplatform.h \
   /home/bersbot/proj/OpenGL/libs/glad/include/glad/glad.h \
   /home/bersbot/proj/OpenGL/libs/glfw/include/GLFW/glfw3.h \
-  /home/bersbot/proj/OpenGL/src/func.hpp \
+  /home/bersbot/proj/OpenGL/src/include.hpp \
+  /home/bersbot/proj/OpenGL/src/main.hpp \
+  /home/bersbot/proj/OpenGL/src/render/color.hpp \
+  /home/bersbot/proj/OpenGL/src/render/render.hpp \
   /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -684,17 +687,17 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/glm/ext/vector_bool1_precision.hpp:
 
+/usr/include/glm/ext/vector_bool1.hpp:
+
+/usr/include/glm/ext/scalar_uint_sized.hpp:
+
+/usr/include/glm/ext/scalar_int_sized.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/13/limits:
 
 /usr/include/c++/13/istream:
-
-/usr/include/limits.h:
-
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
-/usr/include/c++/13/initializer_list:
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
@@ -726,11 +729,11 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/c++/13/cstdio:
 
-/usr/include/c++/13/fstream:
-
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/fstream:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -757,8 +760,6 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 /usr/include/c++/13/cerrno:
 
 /usr/include/c++/13/tr1/poly_hermite.tcc:
-
-/usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/glm/ext/matrix_float2x3_precision.hpp:
 
@@ -828,13 +829,21 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/usr/include/c++/13/stdexcept:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+/usr/include/linux/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/c++/13/debug/debug.h:
 
-/usr/include/glm/exponential.hpp:
+/usr/include/glm/ext/matrix_double4x2_precision.hpp:
+
+/usr/include/glm/ext/vector_int2.hpp:
+
+/usr/include/c++/13/compare:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
@@ -842,7 +851,39 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/glm/ext/matrix_double3x3_precision.hpp:
 
-/usr/include/c++/13/bits/ptr_traits.h:
+/usr/include/glm/ext/matrix_float2x4.hpp:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/glm/ext/vector_int3_sized.hpp:
+
+/usr/include/assert.h:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/strings.h:
+
+/usr/include/glm/detail/compute_common.hpp:
+
+/usr/include/glm/detail/type_vec3.hpp:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/glm/gtc/epsilon.hpp:
+
+/usr/include/glm/ext/matrix_float2x2_precision.hpp:
+
+/usr/include/c++/13/ios:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/13/bits/node_handle.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
@@ -857,42 +898,6 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 /usr/include/glm/detail/type_mat2x4.hpp:
 
 /usr/include/glm/ext/matrix_float4x3.hpp:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/glm/ext/vector_int3_sized.hpp:
-
-/usr/include/assert.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/glm/ext/vector_double4.hpp:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/glm/ext/matrix_float4x2_precision.hpp:
-
-/usr/include/strings.h:
-
-/usr/include/glm/detail/compute_common.hpp:
-
-/usr/include/glm/detail/type_vec3.hpp:
-
-/usr/include/c++/13/ios:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/glm/gtc/epsilon.hpp:
-
-/usr/include/glm/ext/matrix_float2x2_precision.hpp:
 
 /usr/include/c++/13/bits/unordered_map.h:
 
@@ -930,19 +935,43 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/c++/13/bits/move.h:
 
-/usr/include/glm/ext/vector_int2.hpp:
-
-/usr/include/c++/13/compare:
-
-/usr/include/c++/13/system_error:
-
 /home/bersbot/proj/OpenGL/libs/glfw/include/GLFW/glfw3.h:
 
-/home/bersbot/proj/OpenGL/src/func.hpp:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
-/usr/include/c++/13/bits/functional_hash.h:
+/home/bersbot/proj/OpenGL/src/render/color.hpp:
 
-/usr/include/errno.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/glm/exponential.hpp:
+
+/usr/include/glm/ext/vector_double4.hpp:
+
+/usr/include/glm/ext/matrix_float4x2_precision.hpp:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/home/bersbot/proj/OpenGL/src/render/render.hpp:
+
+/usr/include/glm/ext/quaternion_transform.hpp:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/home/bersbot/proj/OpenGL/src/main.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/glm/mat2x4.hpp:
+
+/usr/include/c++/13/bits/hashtable.h:
 
 /usr/include/glm/ext/vector_bool4_precision.hpp:
 
@@ -963,6 +992,10 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 /usr/include/glm/ext/vector_double2_precision.hpp:
 
 /usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/glm/ext/matrix_float3x2_precision.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -988,15 +1021,9 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/c++/13/bits/istream.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/usr/include/c++/13/bits/functional_hash.h:
 
-/usr/include/glm/ext/vector_uint3.hpp:
-
-/usr/include/c++/13/string_view:
-
-/usr/include/glm/detail/type_quat.inl:
-
-/usr/include/features-time64.h:
+/usr/include/errno.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
@@ -1005,12 +1032,6 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 /usr/include/c++/13/bits/hash_bytes.h:
 
 /usr/include/glm/ext/quaternion_double.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/glm/mat2x4.hpp:
-
-/usr/include/c++/13/bits/hashtable.h:
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
@@ -1048,25 +1069,33 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/glm/detail/type_mat2x2.hpp:
 
-/usr/include/c++/13/stdexcept:
+/home/bersbot/proj/OpenGL/src/include.hpp:
 
-/usr/include/linux/errno.h:
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/c++/13/debug/debug.h:
+/usr/include/glm/ext/vector_uint3.hpp:
 
-/usr/include/glm/ext/matrix_double4x2_precision.hpp:
+/usr/include/c++/13/string_view:
 
-/usr/include/glm/ext/matrix_float2x4.hpp:
+/usr/include/glm/detail/type_quat.inl:
 
-/usr/include/c++/13/bits/fstream.tcc:
+/usr/include/features-time64.h:
 
-/usr/include/glm/ext/matrix_float3x2_precision.hpp:
+/usr/include/limits.h:
 
-/usr/include/c++/13/bits/refwrap.h:
+/usr/include/c++/13/initializer_list:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
 
 /usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/glm/detail/type_mat4x4.inl:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/c++/13/type_traits:
 
@@ -1089,8 +1118,6 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/glm/ext/scalar_uint_sized.hpp:
 
 /usr/include/c++/13/cfloat:
 
@@ -1121,8 +1148,6 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/glm/ext/matrix_projection.hpp:
-
-/usr/include/glm/ext/scalar_int_sized.hpp:
 
 /usr/include/features.h:
 
@@ -1228,12 +1253,6 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/glm/detail/type_mat4x4.hpp:
 
-/usr/include/c++/13/bits/range_access.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/glm/detail/type_mat4x4.inl:
-
 /usr/include/glm/detail/type_quat.hpp:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
@@ -1328,18 +1347,8 @@ src/CMakeFiles/OpenGL.dir/main.cpp.o: /home/bersbot/proj/OpenGL/src/main.cpp \
 
 /usr/include/glm/ext/quaternion_relational.inl:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/glm/ext/quaternion_transform.hpp:
-
 /usr/include/glm/ext/quaternion_transform.inl:
 
 /usr/include/glm/ext/quaternion_trigonometric.hpp:
 
 /usr/include/glm/ext/scalar_constants.inl:
-
-/usr/include/glm/ext/vector_bool1.hpp:
